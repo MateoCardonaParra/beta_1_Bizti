@@ -44,6 +44,10 @@ public class Registro {
   @JsonBackReference(value = "reto-registro") 
   private Reto reto;
 
+  // Constructor vacio
+      public Registro() {
+    }
+
   // --- GETTERS Y SETTERS ---
 
   public UUID getId() {

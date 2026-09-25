@@ -3,6 +3,7 @@ package com.example.beta_1_Bizti.models;
 import java.util.UUID;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 
 import java.util.List;
 import jakarta.persistence.Column;
@@ -28,7 +29,7 @@ public class Prioridad {
     private Integer nivel;
 
     @OneToMany(mappedBy = "prioridad")
-    @JsonManagedReference("reto_prioridad")
+    @JsonManagedReference ("reto_prioridad")
     private List<Reto> retos;
 
 // Constructor vacío
